@@ -31,6 +31,7 @@ public class ArraysTest {
         System.out.print("Тест метода getActualSize()   ");
         assertEquals(6, engine.getActualSize(books), "тест пройден");
         System.out.println(" - успех");
+
     }
 
     @Test
