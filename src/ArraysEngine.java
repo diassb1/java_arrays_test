@@ -74,15 +74,15 @@ public class ArraysEngine {
     public Book findLargestBook(Book[] books) {
         int a = 0;
         int b = 0;
-        for (Book book:books) {
-            if (book == null){
-                b++;
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null){
                 continue;
             }
-            if (a < book.pages) {
-                a = book.pages;
-                b++;
+            if (a < books[i].pages){
+                a = books[i].pages;
+                b = i;
             }
+
         }
         return books[b];
     }
